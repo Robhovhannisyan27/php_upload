@@ -82,6 +82,7 @@
 				method: 'POST',
 				data: {data: data_chunk, chunk: chunk , chunks_lenght: chunks_lenght}
 			}).done(function(response) {
+				console.log(response);
 				readAndSendChunk();
 			});
 		}
